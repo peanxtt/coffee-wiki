@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Coffee Bean Varieties - The Global Grind &amp; Whisk</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8D6E63",       // Warm earthy brown
+                        "primary-dark": "#5D4037",  // Darker espresso brown
+                        "primary-light": "#D7CCC8", // Latte foam color
+                        "background-light": "#FDFBF7", // Warm cream/off-white
+                        "background-dark": "#1C1917",  // Very dark warm grey
+                        "accent": "#A1887F",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-[#3E2723] dark:text-[#EFEBE9] flex flex-col min-h-screen">
+<header class="sticky top-0 z-50 bg-white dark:bg-[#292524] border-b border-[#E7E5E4] dark:border-[#44403C] px-4 md:px-10 py-3">
+<div class="mx-auto max-w-7xl flex items-center justify-between whitespace-nowrap">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#3E2723] dark:text-[#EFEBE9]">
+<div class="size-8 text-primary">
+<span class="material-symbols-outlined text-[32px]">local_cafe</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">The Global Grind &amp; Whisk</h2>
+</div>
+<div class="hidden lg:flex flex-col min-w-40 h-10 w-96">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full border border-transparent focus-within:border-primary/50 transition-colors">
+<div class="text-[#8D6E63] flex border-none bg-[#F5F5F4] dark:bg-[#1C1917] items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#3E2723] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#F5F5F4] dark:bg-[#1C1917] focus:border-none h-full placeholder:text-[#A1887F] px-4 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search beans, regions, profiles..." value=""/>
+</div>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-[#3E2723] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Origins</a>
+<a class="text-primary dark:text-primary-light text-sm font-bold leading-normal hover:text-primary transition-colors" href="#">Varieties</a>
+<a class="text-[#3E2723] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Brewing</a>
+<a class="text-[#3E2723] dark:text-gray-200 text-sm font-medium leading-normal hover:text-primary transition-colors" href="#">Roasting</a>
+</div>
+</div>
+</div>
+</header>
+<div class="flex-1 flex max-w-7xl mx-auto w-full justify-center">
+<main class="w-full flex flex-col px-4 md:px-8 lg:px-12 py-8">
+<nav class="flex flex-wrap items-center gap-2 mb-6 text-sm">
+<a class="text-[#8D6E63] hover:text-primary transition-colors font-medium" href="#">Home</a>
+<span class="material-symbols-outlined text-[#A1887F] text-[16px]">chevron_right</span>
+<a class="text-[#8D6E63] hover:text-primary transition-colors font-medium" href="#">Coffee</a>
+<span class="material-symbols-outlined text-[#A1887F] text-[16px]">chevron_right</span>
+<span class="text-[#3E2723] dark:text-white font-bold">Bean Varieties</span>
+</nav>
+<div class="mb-10 relative group rounded-2xl overflow-hidden bg-white dark:bg-[#292524] p-8 md:p-12 shadow-sm border border-[#E7E5E4] dark:border-[#44403C]">
+<div class="absolute top-0 right-0 w-80 h-80 bg-primary/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4 pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-[#D7CCC8]/30 dark:bg-[#5D4037]/20 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
+<div class="relative z-10 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#F5F5F4] dark:bg-[#1C1917] text-[#8D6E63] text-xs font-bold tracking-wide uppercase mb-4 border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="material-symbols-outlined text-sm">menu_book</span> Botanical Guide
+                    </div>
+<h1 class="text-[#3E2723] dark:text-white text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em] mb-4">
+                        Coffee Bean Varieties
+                    </h1>
+<p class="text-[#5D4037] dark:text-[#D7CCC8] text-lg md:text-xl font-normal leading-relaxed">
+                        While there are over 100 species of coffee plants, the global coffee industry is dominated by four main varieties: <strong>Arabica</strong>, <strong>Robusta</strong>, <strong>Liberica</strong>, and <strong>Excelsa</strong>. Each offers a distinct profile, from the delicate acidity of Arabica to the smoky depth of Liberica.
+                    </p>
+</div>
+</div>
+<h2 class="text-2xl font-bold text-[#3E2723] dark:text-white mb-6 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">grain</span>
+                The Four Major Varieties
+            </h2>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-6 mb-12">
+<div class="bg-white dark:bg-[#292524] rounded-xl border border-[#E7E5E4] dark:border-[#44403C] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="p-6 md:p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-[#3E2723] dark:text-white">Arabica</h3>
+<p class="text-sm text-[#8D6E63] italic">Coffea arabica</p>
+</div>
+<div class="bg-[#EFEBE9] dark:bg-[#1C1917] text-[#5D4037] dark:text-[#D7CCC8] px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">
+                                ~60-70% Global Production
+                            </div>
+</div>
+<p class="text-[#5D4037] dark:text-gray-300 mb-6 leading-relaxed">
+                            Known for its smooth, complex flavor profile and lack of bitterness. Arabica beans are fragile and require specific high-altitude conditions to thrive. They are the standard for specialty coffee.
+                        </p>
+<div class="grid grid-cols-2 gap-4 mt-auto">
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Flavor Profile</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Sweet, Fruit, Berries, Sugar</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Caffeine</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Low (1.2% - 1.5%)</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Growing Conditions</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">High Alt (600m+), Cool</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Primary Use</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Pour-over, Espresso</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#292524] rounded-xl border border-[#E7E5E4] dark:border-[#44403C] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="p-6 md:p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-[#3E2723] dark:text-white">Robusta</h3>
+<p class="text-sm text-[#8D6E63] italic">Coffea canephora</p>
+</div>
+<div class="bg-[#EFEBE9] dark:bg-[#1C1917] text-[#5D4037] dark:text-[#D7CCC8] px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">
+                                ~30-40% Global Production
+                            </div>
+</div>
+<p class="text-[#5D4037] dark:text-gray-300 mb-6 leading-relaxed">
+                            A hardier plant with higher caffeine content and a stronger, harsher taste profile. Often described as earthy or rubbery, but valued for its deep body and rich crema in espresso blends.
+                        </p>
+<div class="grid grid-cols-2 gap-4 mt-auto">
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Flavor Profile</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Earthy, Nutty, Bitter, Grain</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Caffeine</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">High (2.2% - 2.7%)</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Growing Conditions</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Low Alt, Hot/Humid</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Primary Use</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Instant, Espresso Blends</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#292524] rounded-xl border border-[#E7E5E4] dark:border-[#44403C] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="p-6 md:p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-[#3E2723] dark:text-white">Liberica</h3>
+<p class="text-sm text-[#8D6E63] italic">Coffea liberica</p>
+</div>
+<div class="bg-[#EFEBE9] dark:bg-[#1C1917] text-[#5D4037] dark:text-[#D7CCC8] px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">
+                                &lt; 2% Global Production
+                            </div>
+</div>
+<p class="text-[#5D4037] dark:text-gray-300 mb-6 leading-relaxed">
+                            Rare and unique, known for its irregular bean shape and a polarizing profile that is smoky, nutty, and floral. Primarily grown in the Philippines (known as Kapeng Barako).
+                        </p>
+<div class="grid grid-cols-2 gap-4 mt-auto">
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Flavor Profile</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Smoky, Woody, Floral</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Caffeine</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Very Low</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Growing Conditions</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Specific Humidity</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Primary Use</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Heritage Brews</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#292524] rounded-xl border border-[#E7E5E4] dark:border-[#44403C] overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col">
+<div class="p-6 md:p-8 flex-1">
+<div class="flex justify-between items-start mb-4">
+<div>
+<h3 class="text-2xl font-bold text-[#3E2723] dark:text-white">Excelsa</h3>
+<p class="text-sm text-[#8D6E63] italic">Coffea liberica var. dewevrei</p>
+</div>
+<div class="bg-[#EFEBE9] dark:bg-[#1C1917] text-[#5D4037] dark:text-[#D7CCC8] px-3 py-1 rounded-lg text-xs font-bold uppercase tracking-wider">
+                                &lt; 1% Global Production
+                            </div>
+</div>
+<p class="text-[#5D4037] dark:text-gray-300 mb-6 leading-relaxed">
+                            Historically classified separately, now considered a variety of Liberica. It grows on large trees and contributes a tart, fruity, dark-roast character to blends, adding complexity.
+                        </p>
+<div class="grid grid-cols-2 gap-4 mt-auto">
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Flavor Profile</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Tart, Fruity, Dark</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Caffeine</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Medium</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Growing Conditions</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Medium Alt, Southeast Asia</span>
+</div>
+<div class="p-3 bg-[#FDFBF7] dark:bg-[#1C1917] rounded-lg border border-[#E7E5E4] dark:border-[#44403C]">
+<span class="text-xs text-[#8D6E63] font-bold uppercase block mb-1">Primary Use</span>
+<span class="text-sm font-semibold text-[#3E2723] dark:text-[#EFEBE9]">Blends for depth</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-[#292524] rounded-xl border border-[#E7E5E4] dark:border-[#44403C] shadow-sm p-8">
+<div class="mb-6 flex justify-between items-end">
+<div>
+<h2 class="text-2xl font-bold text-[#3E2723] dark:text-white mb-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">table_chart</span>
+                            Comparative Overview
+                        </h2>
+<p class="text-[#5D4037] dark:text-gray-400">At-a-glance differences between the species.</p>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr>
+<th class="py-4 px-6 bg-[#F5F5F4] dark:bg-[#1C1917] text-xs font-bold uppercase text-[#8D6E63] rounded-tl-lg border-b dark:border-[#44403C]">Feature</th>
+<th class="py-4 px-6 bg-[#F5F5F4] dark:bg-[#1C1917] text-xs font-bold uppercase text-[#3E2723] dark:text-white border-b dark:border-[#44403C]">Arabica</th>
+<th class="py-4 px-6 bg-[#F5F5F4] dark:bg-[#1C1917] text-xs font-bold uppercase text-[#3E2723] dark:text-white border-b dark:border-[#44403C]">Robusta</th>
+<th class="py-4 px-6 bg-[#F5F5F4] dark:bg-[#1C1917] text-xs font-bold uppercase text-[#3E2723] dark:text-white border-b dark:border-[#44403C]">Liberica</th>
+<th class="py-4 px-6 bg-[#F5F5F4] dark:bg-[#1C1917] text-xs font-bold uppercase text-[#3E2723] dark:text-white rounded-tr-lg border-b dark:border-[#44403C]">Excelsa</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[#E7E5E4] dark:divide-[#44403C]">
+<tr class="hover:bg-[#FDFBF7] dark:hover:bg-[#1C1917]/50 transition-colors">
+<td class="py-4 px-6 text-sm font-bold text-[#8D6E63]">Acidity</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">High, Bright</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Low</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Low</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Medium, Tart</td>
+</tr>
+<tr class="hover:bg-[#FDFBF7] dark:hover:bg-[#1C1917]/50 transition-colors">
+<td class="py-4 px-6 text-sm font-bold text-[#8D6E63]">Body</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Light to Medium</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Heavy, Full</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Full</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Medium</td>
+</tr>
+<tr class="hover:bg-[#FDFBF7] dark:hover:bg-[#1C1917]/50 transition-colors">
+<td class="py-4 px-6 text-sm font-bold text-[#8D6E63]">Caffeine</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">~ 1.5%</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">~ 2.7%</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">~ 1.2%</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">~ 1.0%</td>
+</tr>
+<tr class="hover:bg-[#FDFBF7] dark:hover:bg-[#1C1917]/50 transition-colors">
+<td class="py-4 px-6 text-sm font-bold text-[#8D6E63]">Bean Shape</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Oval, Flat</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Circular, Small</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Asymmetrical, Large</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">Teardrop</td>
+</tr>
+<tr class="hover:bg-[#FDFBF7] dark:hover:bg-[#1C1917]/50 transition-colors">
+<td class="py-4 px-6 text-sm font-bold text-[#8D6E63]">Price</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">$$$</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">$</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">$$ (Rare)</td>
+<td class="py-4 px-6 text-sm text-[#3E2723] dark:text-[#EFEBE9]">$$</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
