@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Brewing Science Hub | The Scholarly Roaster</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&amp;family=Fraunces:opsz,wght@9..144,300;9..144,600&amp;family=Instrument+Sans:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#393430",
+              "tertiary-container": "#9e8e79",
+              "inverse-on-surface": "#352f2b",
+              "primary-fixed": "#ffdcc5",
+              "secondary": "#d1c4bd",
+              "surface-container": "#241f1b",
+              "primary": "#ffb781",
+              "inverse-surface": "#ebe0da",
+              "surface-tint": "#ffb781",
+              "surface-container-lowest": "#110d0a",
+              "surface-container-low": "#1f1b17",
+              "surface-container-high": "#2e2925",
+              "tertiary-fixed-dim": "#d6c4ac",
+              "primary-container": "#ca7f42",
+              "on-surface-variant": "#d8c2b5",
+              "on-primary-fixed-variant": "#703800",
+              "surface-bright": "#3e3834",
+              "on-background": "#ebe0da",
+              "on-tertiary": "#392f1e",
+              "on-secondary-fixed": "#211a16",
+              "on-primary-fixed": "#301400",
+              "tertiary-fixed": "#f3e0c7",
+              "on-error": "#690005",
+              "on-tertiary-container": "#322818",
+              "secondary-fixed": "#ede0d9",
+              "surface-container-highest": "#393430",
+              "on-secondary-fixed-variant": "#4d4540",
+              "outline-variant": "#534439",
+              "secondary-container": "#504742",
+              "primary-fixed-dim": "#ffb781",
+              "on-tertiary-fixed-variant": "#514533",
+              "outline": "#a08d81",
+              "inverse-primary": "#8e4e14",
+              "surface-dim": "#17130f",
+              "error": "#ffb4ab",
+              "surface": "#17130f",
+              "background": "#17130f",
+              "on-secondary-container": "#c2b6af",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#ebe0da",
+              "on-tertiary-fixed": "#231a0b",
+              "tertiary": "#d6c4ac",
+              "secondary-fixed-dim": "#d1c4bd",
+              "on-primary": "#4e2500",
+              "on-secondary": "#362f2a",
+              "on-primary-container": "#452000",
+              "error-container": "#93000a"
+            },
+            fontFamily: {
+              "serif": ["Cormorant Garamond", "serif"],
+              "fraunces": ["Fraunces", "serif"],
+              "sans": ["Instrument Sans", "sans-serif"],
+              "mono": ["Geist Mono", "monospace"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0F0B08;
+            color: #ebe0da;
+            font-family: 'Instrument Sans', sans-serif;
+            background-image: radial-gradient(circle at 50% 50%, rgba(194,120,60,0.03) 0%, transparent 100%);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 2rem;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+<!-- TopAppBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0F0B08]/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(194,120,60,0.08)] flex justify-between items-center px-12 h-20 w-full">
+<div class="text-2xl font-serif italic text-[#C2783C] tracking-tighter">The Scholarly Roaster</div>
+<div class="hidden md:flex space-x-8 items-center font-serif text-lg tracking-tight font-light">
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">The Archive</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Origins</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Roasting Craft</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Matcha Press</a>
+<a class="text-[#FFB781] border-b-2 border-[#C2783C] pb-1" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6 text-[#C2783C]">
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all" data-icon="language">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all" data-icon="settings">settings</span>
+</div>
+</nav>
+<div class="flex flex-1 pt-20">
+<!-- SideNavBar -->
+<aside class="hidden lg:flex h-screen w-72 sticky top-20 left-0 border-r border-[#534439]/20 bg-[#1F1B17] flex-col pt-8 space-y-2 overflow-y-auto">
+<div class="px-8 mb-6">
+<h3 class="font-mono text-sm tracking-wide uppercase font-medium text-[#C2783C]">Table of Contents</h3>
+<p class="text-stone-500 text-xs mt-1 uppercase tracking-widest">Brewing Science Module</p>
+</div>
+<a class="text-[#FFB781] bg-[#2E2925] border-l-4 border-[#C2783C] py-3 px-6 flex items-center space-x-3 cursor-pointer active:brightness-110">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+<span class="font-mono text-sm tracking-wide uppercase">Extraction Theory</span>
+</a>
+<a class="text-stone-500 py-3 px-6 flex items-center space-x-3 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="science">science</span>
+<span class="font-mono text-sm tracking-wide uppercase">Water Chemistry</span>
+</a>
+<a class="text-stone-500 py-3 px-6 flex items-center space-x-3 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="nature">nature</span>
+<span class="font-mono text-sm tracking-wide uppercase">TDS Analysis</span>
+</a>
+<a class="text-stone-500 py-3 px-6 flex items-center space-x-3 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="factory">factory</span>
+<span class="font-mono text-sm tracking-wide uppercase">Grind Dynamics</span>
+</a>
+<a class="text-stone-500 py-3 px-6 flex items-center space-x-3 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-sm" data-icon="history">history</span>
+<span class="font-mono text-sm tracking-wide uppercase">Methodology</span>
+</a>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-8 md:px-16 lg:px-24 py-16 overflow-x-hidden">
+<!-- Hero Section: Asymmetric Editorial -->
+<header class="editorial-grid mb-32">
+<div class="col-span-12 lg:col-span-7">
+<span class="font-mono text-primary text-xs tracking-[0.3em] uppercase mb-4 block">Archive Section 04 // Extraction Principles</span>
+<h1 class="font-serif text-6xl md:text-8xl font-light leading-tight tracking-tighter mb-8">
+                        The Physics of <br/>
+<span class="italic text-tertiary">Extraction</span>
+</h1>
+<p class="font-sans text-xl text-stone-400 max-w-xl leading-relaxed">
+                        Coffee brewing is a delicate chemical migration. From the first drop of water to the final refractometer reading, we explore the variables that define specialty excellence.
+                    </p>
+</div>
+<div class="col-span-12 lg:col-span-5 relative mt-12 lg:mt-0">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden rounded-sm relative">
+<img class="w-full h-full object-cover grayscale opacity-60 hover:grayscale-0 transition-all duration-700" data-alt="dramatic close-up of dark espresso dripping from a portafilter with steam and rich crema in high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-mhe6Wj53GFxZ6dJIKgxrB9WiFz7qR_oaxQ6TGayVF0CZhlSkUuUhOA1J-fCNzk398uv8zb73SKAf12Gx8f97O8FjssGva-R39-M2QrOYCnMZvvuONlJ2K3h2ta24XPDHfZ12PFV1wgvy0n-7R0VszbhO19Up2BmAlelNoU93Kgkdo8Yt_HnSu0qt696nmDN_HOHrmu0LNNUIPQYN9DAWGMijs5bv5E92IpUW2SZv_GiwTfTm7dX7pHt6ofKKhHhgQLLkvl--"/>
+</div>
+<div class="absolute -bottom-8 -left-8 bg-primary-container p-8 max-w-[200px] border-l-4 border-primary">
+<span class="font-mono text-[10px] uppercase text-on-primary-container block mb-2">Primary Variable</span>
+<p class="font-fraunces text-lg text-on-primary-container leading-tight">Solubility Gradient in High Altitude Roasts.</p>
+</div>
+</div>
+</header>
+<!-- Data Visualization Block: Extraction Curves -->
+<section class="mb-32 bg-surface-container-low p-12 relative border-l border-outline-variant/20">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12">
+<div>
+<h2 class="font-fraunces text-3xl mb-2">Extraction Yield Dynamics</h2>
+<p class="font-mono text-xs uppercase text-stone-500 tracking-widest">Ideal Range: 18% — 22%</p>
+</div>
+<div class="flex space-x-4 mt-6 md:mt-0">
+<div class="flex items-center space-x-2">
+<span class="w-3 h-3 bg-primary rounded-full"></span>
+<span class="font-mono text-[10px] uppercase">Light Roast</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="w-3 h-3 bg-tertiary-container rounded-full"></span>
+<span class="font-mono text-[10px] uppercase">Dark Roast</span>
+</div>
+</div>
+</div>
+<!-- Stylized Extraction Curve -->
+<div class="h-64 w-full flex items-end justify-between space-x-1 border-b border-outline-variant/30 pb-1">
+<div class="w-full h-full relative group">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1000 200">
+<path d="M0,180 Q250,150 500,80 T1000,20" fill="none" stroke="#ffb781" stroke-width="3"></path>
+<path d="M0,190 Q200,160 400,120 T1000,80" fill="none" stroke="#9e8e79" stroke-dasharray="8,4" stroke-width="2"></path>
+</svg>
+<div class="absolute top-1/2 left-1/4 -translate-y-1/2 bg-surface-container-high p-4 border border-outline-variant/20 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="font-mono text-[10px] block text-primary">TDS: 1.35%</span>
+<span class="font-sans text-xs">Peak Flavor Clarity Zone</span>
+</div>
+</div>
+</div>
+<div class="flex justify-between mt-4 font-mono text-[10px] text-stone-500 uppercase">
+<span>Pre-Infusion</span>
+<span>First Phase</span>
+<span>Sweetness Peak</span>
+<span>Tannin Release</span>
+</div>
+</section>
+<!-- Grid: Equipment Cards -->
+<section class="mb-32">
+<div class="flex items-center justify-between mb-12">
+<h2 class="font-fraunces text-4xl">Essential Instruments</h2>
+<a class="font-mono text-xs text-primary border-b border-primary/30 pb-1 hover:text-primary-fixed-dim transition-colors" href="#">View All Laboratory Gear</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container p-8 hover:bg-surface-container-high transition-all duration-300">
+<div class="h-48 mb-6 overflow-hidden">
+<img class="w-full h-full object-cover filter sepia-[0.3]" data-alt="minimalist overhead photo of a professional laboratory coffee scale with digital readout on dark textured surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9CvPczcm5hEnHjEk3NgTn4gjgH9nS4SNOW6yLM_bE1BydXnI8LjN0MOPckkKgt9aUG-wQmYKb3XgXpEIwAOF-dNhDM2tDRJjc807xBwo-3wbnlatCx7m_dXyrB4W9CueNDJ7bUIflV1kSEv3KiS8QGAXhPy39FbXzvRuw3A0KOqvCBpFazbiAcRUTtldeji5Vln1iU3wTM7OaP59BTnA5N74tcAVvkspmUQ1TyquCvJ3OvCPSms7MSCQPH6Iv5eRQSwjT57sT"/>
+</div>
+<span class="font-mono text-[10px] text-primary uppercase mb-2 block">Measurement</span>
+<h3 class="font-fraunces text-xl mb-4">Precision Scale 0.1g</h3>
+<p class="font-sans text-sm text-stone-400 leading-relaxed">The bedrock of consistency. Every gram shift alters the chemistry of the final cup.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container p-8 hover:bg-surface-container-high transition-all duration-300">
+<div class="h-48 mb-6 overflow-hidden">
+<img class="w-full h-full object-cover filter sepia-[0.3]" data-alt="close-up of a high-end hand burr coffee grinder with wood and steel details in warm soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPnfydt4y4OFCiE9Yq-z4fBLFEYGyVWq9HfaoakC_9jOCarWr55nsNb1Yn14IeNlPr0csCJT_VUpJFmjZiPuJDkEp3hZlbgE-1DSSgkR8b3Gqd1318PbNBNDaTOf9Da7jOb4gFqgoi4olKxz03UZkvdVOWdYBvk-MyFTASFveHP6VZB0AAKf_pcQXge4MsEKCzIvgGzy23QonbeFpDi7XOZz1poLJNNVIYL1g5Bs2rJdgvkq5hBNNCov-dAR0gpGgkmB0FiV7_"/>
+</div>
+<span class="font-mono text-[10px] text-primary uppercase mb-2 block">Mechanical</span>
+<h3 class="font-fraunces text-xl mb-4">Conical Burr Grinder</h3>
+<p class="font-sans text-sm text-stone-400 leading-relaxed">Achieving uniform particle distribution to prevent uneven extraction pathways.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container p-8 hover:bg-surface-container-high transition-all duration-300">
+<div class="h-48 mb-6 overflow-hidden">
+<img class="w-full h-full object-cover filter sepia-[0.3]" data-alt="modern glass coffee refractometer displaying data on a mobile device screen next to a cup of coffee" src="https://lh3.googleusercontent.com/aida-public/AB6AXuATIIk_W5_8ifq5pJCeIMhF77GtfFh2mcjA_ob8yQnaOatu6eJ0boiIT5fWF_wdAcK1fC_MTjph3qWurGUcsbCHR8mskPCgkLtJXAEenfqqCD_sxsuM6kGK-vELf_xKLG4Xd_YFUtR8_V5hJ0WR-eVF5Pv-r_UkRpRKtkecqrgnxoZmXXfy2WTKjaMy-ZkO4wYqDXXPAGySGJRga8f-LeRH0_JALeSs3DTPImoRgJXmObbMHpAt2OfIO59NLQt5viFEP5RKKeLj"/>
+</div>
+<span class="font-mono text-[10px] text-primary uppercase mb-2 block">Analysis</span>
+<h3 class="font-fraunces text-xl mb-4">VST Refractometer</h3>
+<p class="font-sans text-sm text-stone-400 leading-relaxed">Quantifying invisible flavor through light refraction and TDS percentages.</p>
+</div>
+</div>
+</section>
+<!-- Step-by-Step Instruction Block -->
+<section class="mb-32">
+<div class="bg-surface-container-low p-16">
+<div class="max-w-3xl">
+<h2 class="font-fraunces text-4xl mb-8">The Dialing-In Protocol</h2>
+<div class="space-y-12">
+<div class="flex gap-8 group">
+<span class="font-serif text-5xl text-outline-variant/40 group-hover:text-primary transition-colors italic">01.</span>
+<div>
+<h4 class="font-sans font-bold text-lg mb-2">Identify Base Variable</h4>
+<p class="text-stone-400 leading-relaxed">Lock your water temperature (94°C) and ratio (1:16). Only adjust grind size during initial calibration.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<span class="font-serif text-5xl text-outline-variant/40 group-hover:text-primary transition-colors italic">02.</span>
+<div>
+<h4 class="font-sans font-bold text-lg mb-2">Evaluate Resistance</h4>
+<p class="text-stone-400 leading-relaxed">Monitor flow rate. A "hollow" flavor indicates channeling, while a heavy, bitter finish suggests over-extraction.</p>
+</div>
+</div>
+<div class="flex gap-8 group">
+<span class="font-serif text-5xl text-outline-variant/40 group-hover:text-primary transition-colors italic">03.</span>
+<div>
+<h4 class="font-sans font-bold text-lg mb-2">Analyze TDS Threshold</h4>
+<p class="text-stone-400 leading-relaxed">Measure the solubles. If TDS is below 1.2%, tighten the grind. If above 1.5%, increase the coarseness.</p>
+</div>
+</div>
+</div>
+<button class="mt-16 bg-primary px-10 py-4 text-on-primary font-mono text-sm uppercase tracking-widest hover:bg-primary-fixed-dim transition-colors">
+                            Download Grind Chart PDF
+                        </button>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full border-t border-[#534439]/20 bg-[#0F0B08] flex flex-col md:flex-row justify-between items-center py-12 px-12 mt-auto">
+<div class="font-serif italic text-xl text-stone-300 mb-6 md:mb-0">The Scholarly Roaster</div>
+<div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">The Archives</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Editorial Policy</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Curation Standards</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Privacy</a>
+</div>
+<div class="font-mono text-xs uppercase tracking-widest text-stone-500 text-center md:text-right">
+            © 2024 The Scholarly Roaster. An Archive of Specialty Excellence.
+        </div>
+</footer>
+</body></html>

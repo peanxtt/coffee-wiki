@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bean Varieties Encyclopedia | The Scholarly Roaster</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&amp;family=Fraunces:opsz,wght@9..144,300;9..144,600&amp;family=Instrument+Sans:wght@400;500&amp;family=Geist+Mono:wght@400;500&amp;family=Newsreader:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@400;500;700&amp;family=Space+Grotesk:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-variant": "#393430",
+                        "tertiary-container": "#9e8e79",
+                        "inverse-on-surface": "#352f2b",
+                        "primary-fixed": "#ffdcc5",
+                        "secondary": "#d1c4bd",
+                        "surface-container": "#241f1b",
+                        "primary": "#ffb781",
+                        "inverse-surface": "#ebe0da",
+                        "surface-tint": "#ffb781",
+                        "surface-container-lowest": "#110d0a",
+                        "surface-container-low": "#1f1b17",
+                        "surface-container-high": "#2e2925",
+                        "tertiary-fixed-dim": "#d6c4ac",
+                        "primary-container": "#ca7f42",
+                        "on-surface-variant": "#d8c2b5",
+                        "on-primary-fixed-variant": "#703800",
+                        "surface-bright": "#3e3834",
+                        "on-background": "#ebe0da",
+                        "on-tertiary": "#392f1e",
+                        "on-secondary-fixed": "#211a16",
+                        "on-primary-fixed": "#301400",
+                        "tertiary-fixed": "#f3e0c7",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#322818",
+                        "secondary-fixed": "#ede0d9",
+                        "surface-container-highest": "#393430",
+                        "on-secondary-fixed-variant": "#4d4540",
+                        "outline-variant": "#534439",
+                        "secondary-container": "#504742",
+                        "primary-fixed-dim": "#ffb781",
+                        "on-tertiary-fixed-variant": "#514533",
+                        "outline": "#a08d81",
+                        "inverse-primary": "#8e4e14",
+                        "surface-dim": "#17130f",
+                        "error": "#ffb4ab",
+                        "surface": "#17130f",
+                        "background": "#17130f",
+                        "on-secondary-container": "#c2b6af",
+                        "on-error-container": "#ffdad6",
+                        "on-surface": "#ebe0da",
+                        "on-tertiary-fixed": "#231a0b",
+                        "tertiary": "#d6c4ac",
+                        "secondary-fixed-dim": "#d1c4bd",
+                        "on-primary": "#4e2500",
+                        "on-secondary": "#362f2a",
+                        "on-primary-container": "#452000",
+                        "error-container": "#93000a"
+                    },
+                    fontFamily: {
+                        "headline": ["Newsreader", "serif"],
+                        "body": ["Manrope", "sans-serif"],
+                        "label": ["Space Grotesk", "monospace"],
+                        "serif": ["Cormorant Garamond", "serif"],
+                        "fraunces": ["Fraunces", "serif"],
+                        "sans": ["Instrument Sans", "sans-serif"],
+                        "mono": ["Geist Mono", "monospace"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0F0B08;
+            background-image: radial-gradient(rgba(194, 120, 60, 0.03) 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+        .grain-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            opacity: 0.03;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+        .glass-header {
+            background: rgba(15, 11, 8, 0.9);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body class="text-on-background selection:bg-primary/30 selection:text-primary">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0F0B08]/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(194,120,60,0.08)]">
+<div class="flex justify-between items-center px-12 h-20 w-full">
+<div class="text-2xl font-serif italic text-[#C2783C] dark:text-[#FFB781] tracking-tighter">
+                The Scholarly Roaster
+            </div>
+<div class="hidden md:flex space-x-8 font-serif text-lg tracking-tight font-light">
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">The Archive</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Origins</a>
+<a class="text-[#FFB781] border-b-2 border-[#C2783C] pb-1" href="#">Roasting Craft</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Matcha Press</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6 text-[#C2783C]">
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all">settings</span>
+</div>
+</div>
+</nav>
+<main class="pt-20 flex min-h-screen">
+<!-- SideNavBar / Table of Contents -->
+<aside class="hidden lg:flex flex-col h-screen w-72 sticky top-20 left-0 border-r border-[#534439]/20 bg-[#1F1B17] pt-8 space-y-2 overflow-y-auto">
+<div class="px-6 mb-8">
+<h3 class="font-fraunces text-primary text-xl font-semibold italic">Table of Contents</h3>
+<p class="font-mono text-[10px] uppercase tracking-widest text-stone-500 mt-1">Article Metadata: Bean Varieties</p>
+</div>
+<a class="text-[#FFB781] bg-[#2E2925] border-l-4 border-[#C2783C] py-3 px-6 flex items-center space-x-3 font-sans text-sm tracking-wide uppercase font-medium" href="#intro">
+<span class="material-symbols-outlined text-sm">menu_book</span>
+<span>Introduction</span>
+</a>
+<a class="text-stone-500 py-3 px-6 hover:bg-[#241F1B] hover:text-stone-300 transition-colors flex items-center space-x-3 font-sans text-sm tracking-wide uppercase font-medium" href="#historical">
+<span class="material-symbols-outlined text-sm">history</span>
+<span>Historical Context</span>
+</a>
+<a class="text-stone-500 py-3 px-6 hover:bg-[#241F1B] hover:text-stone-300 transition-colors flex items-center space-x-3 font-sans text-sm tracking-wide uppercase font-medium" href="#cultivars">
+<span class="material-symbols-outlined text-sm">nature</span>
+<span>Cultivars</span>
+</a>
+<a class="text-stone-500 py-3 px-6 hover:bg-[#241F1B] hover:text-stone-300 transition-colors flex items-center space-x-3 font-sans text-sm tracking-wide uppercase font-medium" href="#processing">
+<span class="material-symbols-outlined text-sm">factory</span>
+<span>Processing Methods</span>
+</a>
+<a class="text-stone-500 py-3 px-6 hover:bg-[#241F1B] hover:text-stone-300 transition-colors flex items-center space-x-3 font-sans text-sm tracking-wide uppercase font-medium" href="#chemistry">
+<span class="material-symbols-outlined text-sm">science</span>
+<span>Flavor Chemistry</span>
+</a>
+<div class="mt-auto p-6 border-t border-[#534439]/20">
+<div class="flex items-center space-x-3">
+<div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-[10px] text-on-primary">SR</div>
+<div>
+<p class="text-[10px] font-mono uppercase text-stone-400">Curator Profile</p>
+<p class="text-xs font-sans text-stone-200">Elias Thorne</p>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<article class="flex-1 px-8 md:px-16 lg:px-24 py-16 max-w-6xl">
+<!-- Hero Section -->
+<header class="mb-24 relative">
+<div class="absolute -top-10 -left-10 text-[12rem] font-serif text-primary/5 select-none pointer-events-none italic">Coffea</div>
+<div class="relative z-10">
+<span class="font-mono text-xs uppercase tracking-[0.3em] text-primary-container mb-4 block">Volume IV • Taxonomy of the Seed</span>
+<h1 class="font-serif text-6xl md:text-8xl font-light tracking-tighter text-on-surface leading-none mb-8">
+                        The Botanical <br/><span class="italic text-primary">Encyclopedia</span>
+</h1>
+<p class="font-sans text-xl text-stone-400 max-w-2xl leading-relaxed italic">
+                        An exhaustive study of the Coffea genus, from the ubiquitous Arabica to the resilient Liberica, exploring the genetic heritage that defines every sip.
+                    </p>
+</div>
+</header>
+<!-- Introduction Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-center" id="intro">
+<div class="md:col-span-7">
+<h2 class="font-fraunces text-3xl mb-6 text-on-surface">The Triad of Species</h2>
+<p class="font-sans text-stone-300 leading-relaxed mb-6">
+                        While the commercial coffee market is dominated by two primary species, the genus <span class="italic font-serif">Coffea</span> comprises over 120 identified species. Our focus centers on the three pillars of cultivation: <span class="text-primary">Arabica</span>, known for its complexity; <span class="text-primary">Robusta</span>, for its vigor; and <span class="text-primary">Liberica</span>, for its distinct, bold presence.
+                    </p>
+<div class="border-l border-primary/30 pl-8 my-10">
+<blockquote class="font-serif italic text-2xl text-stone-200 leading-snug">
+                            "To understand the roast, one must first respect the lineage. A bean's soul is written in its genetic sequence long before it meets the fire."
+                        </blockquote>
+<cite class="block mt-4 font-mono text-xs uppercase tracking-widest text-primary-container">— Senior Curator, Margaret Van Der Rohe</cite>
+</div>
+</div>
+<div class="md:col-span-5 relative group">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden rounded-sm relative">
+<img alt="Botanical illustration" class="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-700" data-alt="Vintage botanical illustration of coffee plant leaves and berries with detailed cross-section of a bean on aged parchment paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDmqH91S_L4QQtjMkA9SulcGoD0EHFFgayEAC5HXVa0-wr8hXv9XrOCg1HVBusy3vxab74dqhcRSJ219VtoTXOQjT1Tx8xoV5_WOB42T4W5_J47Mcn68r6ukDQrl2nyoO-5coatjcb0zGLSsKhtT7zijbXvWmyCbDcJAMtL9GuBWipUfpvzA5vMWQLPDC5Pg9zzVrypQjiU7cWJqQw984rWhr8VRcdNRxq-XLyCl8MlmFQsfM6Gk-IqYRQvLaCZIPbrXujFZv99"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0F0B08] via-transparent to-transparent opacity-60"></div>
+</div>
+<div class="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/10 backdrop-blur-md p-4 border border-primary/20 flex flex-col justify-end">
+<span class="font-mono text-[10px] text-primary uppercase">Fig. 1.1</span>
+<span class="font-serif italic text-xs text-stone-300">Coffea Arabica Varietals</span>
+</div>
+</div>
+</section>
+<!-- Data Comparison Table -->
+<section class="mb-32" id="historical">
+<div class="flex items-baseline space-x-4 mb-12">
+<h2 class="font-fraunces text-4xl text-on-surface">Species Comparison</h2>
+<span class="h-px flex-1 bg-outline-variant/30"></span>
+</div>
+<div class="overflow-x-auto bg-surface-container-low p-1 rounded-sm">
+<table class="w-full text-left border-collapse">
+<thead class="bg-surface-container-high">
+<tr>
+<th class="p-6 font-mono text-[10px] uppercase tracking-widest text-stone-500">Species</th>
+<th class="p-6 font-mono text-[10px] uppercase tracking-widest text-stone-500">Altitude (m)</th>
+<th class="p-6 font-mono text-[10px] uppercase tracking-widest text-stone-500">Caffeine %</th>
+<th class="p-6 font-mono text-[10px] uppercase tracking-widest text-stone-500">Sugar Content</th>
+<th class="p-6 font-mono text-[10px] uppercase tracking-widest text-stone-500">Flavor Profile</th>
+</tr>
+</thead>
+<tbody class="font-sans text-stone-300">
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container transition-colors">
+<td class="p-6 font-fraunces italic text-primary">Arabica</td>
+<td class="p-6 font-mono text-sm">900 - 2,200</td>
+<td class="p-6 font-mono text-sm">0.8 - 1.5%</td>
+<td class="p-6 font-mono text-sm">High (6-9%)</td>
+<td class="p-6 text-sm">Acidic, floral, complex, fruit-forward</td>
+</tr>
+<tr class="border-b border-outline-variant/10 hover:bg-surface-container transition-colors">
+<td class="p-6 font-fraunces italic text-primary">Robusta</td>
+<td class="p-6 font-mono text-sm">0 - 800</td>
+<td class="p-6 font-mono text-sm">1.7 - 4.0%</td>
+<td class="p-6 font-mono text-sm">Low (3-7%)</td>
+<td class="p-6 text-sm">Earthy, bitter, woodsy, heavy crema</td>
+</tr>
+<tr class="hover:bg-surface-container transition-colors">
+<td class="p-6 font-fraunces italic text-primary">Liberica</td>
+<td class="p-6 font-mono text-sm">1 - 500</td>
+<td class="p-6 font-mono text-sm">1.2 - 1.4%</td>
+<td class="p-6 font-mono text-sm">Moderate</td>
+<td class="p-6 text-sm">Smoky, nutty, jackfruit, floral notes</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<!-- Cultivars Bento Grid -->
+<section class="mb-32" id="cultivars">
+<h2 class="font-fraunces text-3xl mb-12 text-on-surface">Notable Cultivars</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Typica -->
+<div class="md:col-span-2 bg-surface-container p-8 border-l-2 border-primary/20 relative overflow-hidden group">
+<div class="relative z-10">
+<span class="font-mono text-[10px] text-primary uppercase mb-4 block tracking-tighter">The Genetic Baseline</span>
+<h3 class="font-serif text-3xl mb-4 italic">Typica</h3>
+<p class="text-stone-400 font-sans leading-relaxed text-sm mb-6 max-w-md">
+                                The ancestral variety of the Arabica family tree. Low yield but exceptional cup quality, characterized by a clean, sweet acidity.
+                            </p>
+<div class="flex space-x-4">
+<div class="bg-surface-container-high px-4 py-2 border border-outline-variant/20">
+<span class="block font-mono text-[9px] text-stone-500 uppercase">Mutation</span>
+<span class="text-sm font-sans text-primary">Spontaneous</span>
+</div>
+<div class="bg-surface-container-high px-4 py-2 border border-outline-variant/20">
+<span class="block font-mono text-[9px] text-stone-500 uppercase">Yield</span>
+<span class="text-sm font-sans text-primary">Low-Medium</span>
+</div>
+</div>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 group-hover:opacity-20 transition-opacity">
+<img class="h-full object-cover" data-alt="Extreme close up of fresh green unroasted coffee beans showing intricate textures and organic patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqNoFzUvV2gWqUNGkU0TbYMvEX_bYa70edY06uIbBq3dQNdKgLMePM8J6YQFLsvk7p1GuVs-Uqr5NeytOBevl90m0VTOmmGxpsC7f8QyA2UdOuTcwas71GLrTzmoKhahFau0BEE_knaeB_P_i0NhE2m22d_naeVYWx4HHuvJ8Dz3IPycxK0LPc6lZsL7Nsdjg0x0neBHfFetVmz4R3tOXY5RXRM3ztpJe3r871RIpxhv76F-67pHe14fogq1O7doCc_f31hdS5"/>
+</div>
+</div>
+<!-- Bourbon -->
+<div class="bg-surface-container-high p-8 border-t-2 border-primary/20">
+<span class="font-mono text-[10px] text-primary uppercase mb-4 block tracking-tighter">Island Legacy</span>
+<h3 class="font-serif text-3xl mb-4 italic">Bourbon</h3>
+<p class="text-stone-400 font-sans leading-relaxed text-sm">
+                            Famed for its deep sweetness and heavy body. Naturally mutates into Red, Yellow, and Pink variations.
+                        </p>
+</div>
+<!-- Geisha -->
+<div class="bg-[#2E2925] p-8 md:col-span-3 border border-primary/10 flex flex-col md:flex-row items-center gap-8">
+<div class="flex-1">
+<span class="font-mono text-[10px] text-primary uppercase mb-4 block tracking-tighter">The Modern Icon</span>
+<h3 class="font-serif text-4xl mb-6 italic">Panamanian Geisha</h3>
+<p class="text-stone-300 font-sans leading-relaxed mb-6">
+                                The most sought-after cultivar in specialty coffee. It exhibits tea-like qualities with extraordinary floral notes of jasmine and bergamot.
+                            </p>
+<button class="bg-primary-container text-on-primary px-8 py-3 font-mono text-xs uppercase tracking-widest hover:brightness-110 transition-all">
+                                Study Auction History
+                            </button>
+</div>
+<div class="w-full md:w-72 aspect-square bg-surface-container-lowest flex items-center justify-center p-4">
+<div class="w-full h-full border border-outline-variant/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-6xl" style="font-variation-settings: 'FILL' 1;">spa</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Growing Conditions Section -->
+<section class="mb-32" id="processing">
+<div class="flex justify-between items-end mb-12">
+<h2 class="font-fraunces text-3xl text-on-surface">Cultivation Requirements</h2>
+<span class="font-mono text-[10px] text-stone-500 uppercase">Technical Specs</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-8">
+<div class="flex gap-6">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined">thermostat</span>
+</div>
+<div>
+<h4 class="font-sans font-semibold text-stone-200 uppercase text-sm tracking-wider mb-2">Ideal Temperature</h4>
+<p class="text-stone-400 text-sm leading-relaxed">
+                                    Arabica thrives between 15°C and 24°C. Excessive heat causes the fruit to ripen too quickly, leading to a loss of complexity and potential bean damage.
+                                </p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="text-primary mt-1">
+<span class="material-symbols-outlined">water_drop</span>
+</div>
+<div>
+<h4 class="font-sans font-semibold text-stone-200 uppercase text-sm tracking-wider mb-2">Rainfall Patterns</h4>
+<p class="text-stone-400 text-sm leading-relaxed">
+                                    An annual rainfall of 1,500 to 2,500 mm is required, with a distinct dry season to trigger flowering and ensure a uniform harvest.
+                                </p>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-10 relative">
+<h4 class="font-fraunces italic text-xl mb-6 text-primary">The Terroir Effect</h4>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-2">
+<span class="font-mono text-xs text-stone-500">Volcanic Soil</span>
+<span class="font-mono text-xs text-stone-300">High Phosphorus</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-2">
+<span class="font-mono text-xs text-stone-500">Cloud Cover</span>
+<span class="font-mono text-xs text-stone-300">Shade Grown</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-2">
+<span class="font-mono text-xs text-stone-500">Slope Gradient</span>
+<span class="font-mono text-xs text-stone-300">15% - 25%</span>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-primary/10">
+<p class="font-sans text-xs italic text-stone-500">
+                                Curatorial Note: Terroir often supersedes genetics in extreme microclimates.
+                            </p>
+</div>
+</div>
+</div>
+</section>
+</article>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-[#534439]/20 bg-[#0F0B08] mt-auto">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-12 w-full">
+<div class="font-serif italic text-xl text-stone-300 mb-6 md:mb-0">
+                The Scholarly Roaster
+            </div>
+<div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0">
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">The Archives</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Editorial Policy</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Curation Standards</a>
+<a class="font-mono text-xs uppercase tracking-widest text-[#C2783C] underline" href="#">Privacy</a>
+<a class="font-mono text-xs uppercase tracking-widest text-stone-500 hover:text-stone-200 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="font-mono text-[10px] uppercase tracking-widest text-stone-600">
+                © 2024 The Scholarly Roaster. An Archive of Specialty Excellence.
+            </div>
+</div>
+</footer>
+</body></html>

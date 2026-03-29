@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300;1,600&amp;family=Fraunces:opsz,wght@9..144,300;9..144,600&amp;family=Instrument+Sans:wght@400;500&amp;family=Geist+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,400;6..72,700&amp;family=Manrope:wght@400;500&amp;family=Space+Grotesk:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-variant": "#393430",
+              "tertiary-container": "#9e8e79",
+              "inverse-on-surface": "#352f2b",
+              "primary-fixed": "#ffdcc5",
+              "secondary": "#d1c4bd",
+              "surface-container": "#241f1b",
+              "primary": "#ffb781",
+              "inverse-surface": "#ebe0da",
+              "surface-tint": "#ffb781",
+              "surface-container-lowest": "#110d0a",
+              "surface-container-low": "#1f1b17",
+              "surface-container-high": "#2e2925",
+              "tertiary-fixed-dim": "#d6c4ac",
+              "primary-container": "#ca7f42",
+              "on-surface-variant": "#d8c2b5",
+              "on-primary-fixed-variant": "#703800",
+              "surface-bright": "#3e3834",
+              "on-background": "#ebe0da",
+              "on-tertiary": "#392f1e",
+              "on-secondary-fixed": "#211a16",
+              "on-primary-fixed": "#301400",
+              "tertiary-fixed": "#f3e0c7",
+              "on-error": "#690005",
+              "on-tertiary-container": "#322818",
+              "secondary-fixed": "#ede0d9",
+              "surface-container-highest": "#393430",
+              "on-secondary-fixed-variant": "#4d4540",
+              "outline-variant": "#534439",
+              "secondary-container": "#504742",
+              "primary-fixed-dim": "#ffb781",
+              "on-tertiary-fixed-variant": "#514533",
+              "outline": "#a08d81",
+              "inverse-primary": "#8e4e14",
+              "surface-dim": "#17130f",
+              "error": "#ffb4ab",
+              "surface": "#17130f",
+              "background": "#17130f",
+              "on-secondary-container": "#c2b6af",
+              "on-error-container": "#ffdad6",
+              "on-surface": "#ebe0da",
+              "on-tertiary-fixed": "#231a0b",
+              "tertiary": "#d6c4ac",
+              "secondary-fixed-dim": "#d1c4bd",
+              "on-primary": "#4e2500",
+              "on-secondary": "#362f2a",
+              "on-primary-container": "#452000",
+              "error-container": "#93000a"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Space Grotesk", "monospace"],
+              "serif": ["Cormorant Garamond", "serif"],
+              "fraunces": ["Fraunces", "serif"],
+              "mono": ["Geist Mono", "monospace"],
+              "sans": ["Instrument Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 200, "GRAD" 0, "opsz" 24
+    }
+.grain-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBkCLYbZXSY1bphJKqAjxtfWSJEWcmBnRXdx9AAvjFDKlnp8h-NJ4n5A6tfWVgdn7qqMnIFCKos146ItnrfhvI8Y9vORfQsARkIC8HGnLy-ZagNYaMQMvX8R9xxCfI5VDJn6IRxMo6B3epsXrdaFkY3sUtHNZdTDrew8o3Icz9AluH79eKXRdkTIGpGdbYk2x7VfidWU7JpJJbI43ihTLHH9cZXo1w16v8euSBkOrkd9ajXUvxPkxOaohY9-Wu4KwjcHGtda8CY)
+    }</style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-primary/30">
+<div class="grain-overlay"></div>
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#0F0B08]/90 dark:bg-[#0F0B08]/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(194,120,60,0.08)] flex justify-between items-center px-12 h-20 w-full">
+<div class="text-2xl font-serif italic text-[#C2783C] dark:text-[#FFB781] tracking-tighter">
+            The Scholarly Roaster
+        </div>
+<div class="hidden md:flex items-center space-x-8 font-serif text-lg tracking-tight font-light">
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">The Archive</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Origins</a>
+<a class="text-[#FFB781] border-b-2 border-[#C2783C] pb-1" href="#">Roasting Craft</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Matcha Press</a>
+<a class="text-stone-400 hover:text-stone-200 transition-all duration-300" href="#">Journal</a>
+</div>
+<div class="flex items-center space-x-6 text-[#C2783C]">
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all duration-300 rounded" data-icon="language">language</span>
+<span class="material-symbols-outlined cursor-pointer hover:bg-[#2E2925] p-2 transition-all duration-300 rounded" data-icon="settings">settings</span>
+</div>
+</nav>
+<div class="flex min-h-screen pt-20">
+<!-- SideNavBar -->
+<aside class="h-screen w-72 sticky top-20 left-0 border-r border-[#534439]/20 bg-[#1F1B17] dark:bg-[#1F1B17] hidden lg:block overflow-y-auto">
+<div class="px-8 pt-8 pb-4">
+<h3 class="font-sans text-xs tracking-widest uppercase font-medium text-[#C2783C] mb-1">Table of Contents</h3>
+<p class="text-[10px] text-stone-500 font-mono uppercase tracking-tighter">Article Metadata</p>
+</div>
+<nav class="flex flex-col space-y-2">
+<div class="flex items-center text-stone-500 py-3 px-8 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer group">
+<span class="material-symbols-outlined mr-3 text-lg" data-icon="menu_book">menu_book</span>
+<span class="font-sans text-sm tracking-wide uppercase font-medium">Introduction</span>
+</div>
+<div class="flex items-center text-[#FFB781] bg-[#2E2925] border-l-4 border-[#C2783C] py-3 px-8 cursor-pointer">
+<span class="material-symbols-outlined mr-3 text-lg" data-icon="history">history</span>
+<span class="font-sans text-sm tracking-wide uppercase font-medium">Historical Context</span>
+</div>
+<div class="flex items-center text-stone-500 py-3 px-8 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined mr-3 text-lg" data-icon="nature">nature</span>
+<span class="font-sans text-sm tracking-wide uppercase font-medium">Cultivars</span>
+</div>
+<div class="flex items-center text-stone-500 py-3 px-8 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined mr-3 text-lg" data-icon="factory">factory</span>
+<span class="font-sans text-sm tracking-wide uppercase font-medium">Processing Methods</span>
+</div>
+<div class="flex items-center text-stone-500 py-3 px-8 hover:bg-[#241F1B] hover:text-stone-300 transition-colors cursor-pointer">
+<span class="material-symbols-outlined mr-3 text-lg" data-icon="science">science</span>
+<span class="font-sans text-sm tracking-wide uppercase font-medium">Flavor Chemistry</span>
+</div>
+</nav>
+</aside>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-8 md:px-16 py-12 bg-background relative overflow-hidden">
+<!-- Breadcrumbs -->
+<nav class="flex items-center space-x-2 text-[10px] font-mono uppercase tracking-widest text-stone-500 mb-8">
+<a class="hover:text-primary transition-colors" href="#">Archive</a>
+<span class="material-symbols-outlined text-[12px]" data-icon="chevron_right">chevron_right</span>
+<a class="hover:text-primary transition-colors" href="#">Beverages</a>
+<span class="material-symbols-outlined text-[12px]" data-icon="chevron_right">chevron_right</span>
+<span class="text-primary-fixed-dim">Current Collection</span>
+</nav>
+<!-- Hero Section / Header -->
+<header class="mb-16 relative">
+<div class="absolute -top-12 -left-8 text-[12rem] font-serif italic text-white/[0.02] select-none pointer-events-none">Roast</div>
+<h1 class="font-serif text-6xl md:text-8xl font-light text-on-background tracking-tighter leading-tight mb-4">
+                    The Sensory <span class="italic text-primary font-light">Inventory</span>
+</h1>
+<p class="max-w-2xl font-sans text-stone-400 text-lg leading-relaxed">
+                    A curated selection of the archive's most significant extractions. Each entry is documented by its molecular profile, origin narrative, and the specific thermal journey of its roast.
+                </p>
+</header>
+<!-- Filter Categories -->
+<div class="flex flex-wrap gap-4 mb-12 border-b border-outline-variant/20 pb-8">
+<button class="px-6 py-2 bg-primary text-on-primary font-sans text-xs uppercase tracking-widest font-medium border border-transparent hover:brightness-110 transition-all">All Collections</button>
+<button class="px-6 py-2 bg-surface-container-low text-stone-400 font-sans text-xs uppercase tracking-widest font-medium border border-outline-variant/20 hover:border-primary/50 transition-all">Espresso</button>
+<button class="px-6 py-2 bg-surface-container-low text-stone-400 font-sans text-xs uppercase tracking-widest font-medium border border-outline-variant/20 hover:border-primary/50 transition-all">Pour-over</button>
+<button class="px-6 py-2 bg-surface-container-low text-stone-400 font-sans text-xs uppercase tracking-widest font-medium border border-outline-variant/20 hover:border-primary/50 transition-all">Regional Specials</button>
+<button class="px-6 py-2 bg-surface-container-low text-stone-400 font-sans text-xs uppercase tracking-widest font-medium border border-outline-variant/20 hover:border-primary/50 transition-all">Matcha</button>
+</div>
+<!-- Beverage Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<article class="group relative bg-[#1A1410] border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 flex flex-col overflow-hidden">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Modern espresso shot" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Close-up of a perfectly pulled espresso shot with thick golden crema in a minimalist ceramic cup on a dark stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWtWExiqTeA0eHPlPj7QZ95G7YbfvTykNSedyVmX8mQrUhWuCc8vN7EPHY_0ZycA-8NvYKkLA4ch0Do4qm22Qu3JPKVw3z94pYGoSU77XK-P-U7_MsapGD7Lh504NF4jgyEohIDouYHLFJdJ1Fs4jeQz78S4q5fe9I0vgGWJjimM7mezBfkAsoxVdRalZKBmfbUodNHJPjtYq9FQ26HXeg4yHPgQB4f08yMJHhqDTYGln4NVxsDNhoiNVkhb_9xkDqPkfkOm1O"/>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Single Origin</span>
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">ID: #EXP-092</span>
+</div>
+<h3 class="font-serif text-3xl font-light text-on-background mb-3 group-hover:text-primary transition-colors">Yirgacheffe Obsidian</h3>
+<p class="font-sans text-sm text-stone-400 mb-6 line-clamp-2 leading-relaxed">A dual-stage roast highlighting fermented apricot and a crystalline floral acidity typical of the high-altitude Gedeo zone.</p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Apricot</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Jasmine</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Tea-like</span>
+</div>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="group relative bg-[#1A1410] border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 flex flex-col overflow-hidden">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Pour over coffee preparation" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Dramatic pour over coffee brewing with steam rising, dark background with cinematic lighting highlighting the water stream and glass carafe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANtuOvMEHBZttmLATHS08t8xh_JzDwNIWptbJu1I0y9nkOYTO6te01y_YghC-zyMk3p2z9STcuDdbEECjaov2aAMvFj6j7tYXpPEUKlnMAUWzG7BpOLQMz4Z9zGWcX2UCvo-nzhT8dAWdhjc91KmlYJii9Kh4E-98v509sQIfzlAxZaow9mCrQbhazlmX8PrPKgIow4LsP8hU6GHo-fwreAQoyyZOXzqF6-xi3mVNpA1PosvQ4vWCMp2P05FFu7ufZr1GdEl28"/>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Pour-over</span>
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">ID: #PRV-118</span>
+</div>
+<h3 class="font-serif text-3xl font-light text-on-background mb-3 group-hover:text-primary transition-colors">Midnight Geisha</h3>
+<p class="font-sans text-sm text-stone-400 mb-6 line-clamp-2 leading-relaxed">Reserved for evening service. Slow-extracted to maximize the heavy molasses body while preserving delicate bergamot top notes.</p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Bergamot</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Molasses</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Full Body</span>
+</div>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="group relative bg-[#1A1410] border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 flex flex-col overflow-hidden">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Ceremonial matcha whisk" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Vibrant green ceremonial matcha in a dark textured bowl with a bamboo whisk resting nearby on a dark wooden table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEaiPh8bTQXhB3EA8OmjHaSZG9gFjZaPuzsEDDhqgE6yyHFLhwdX30xiI90JJrqWVbJd3iKUBOUBCCIEDaFVzv3XKiMZMeVZuf2Sn1uk1ieXziLbz9xLfSEFJEDo2BpMh-pFqUzf0sNkndv0x05l_hZTZ4j1yNuUEVMj30JHDxsyTZx6VnhgjmQMtYRpNY98IuM89OPChw9YoQNCyucs3IBVP2-Yd9T56RQtlnqCqR2F4bKjWOs9kAaYmLrdNLorw-6TsQIZIN"/>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Uji Reserve</span>
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">ID: #MTC-004</span>
+</div>
+<h3 class="font-serif text-3xl font-light text-on-background mb-3 group-hover:text-primary transition-colors">Stone-Ground Umami</h3>
+<p class="font-sans text-sm text-stone-400 mb-6 line-clamp-2 leading-relaxed">Shade-grown for 30 days. This ceremonial grade matcha offers an intense savory profile with a sweet, lingering finish.</p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Seaweed</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Walnut</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Velvet</span>
+</div>
+</div>
+</article>
+<!-- Card 4 -->
+<article class="group relative bg-[#1A1410] border border-outline-variant/20 hover:border-primary/30 transition-all duration-500 flex flex-col overflow-hidden">
+<div class="aspect-[4/5] overflow-hidden">
+<img alt="Latte art on dark background" class="w-full h-full object-cover grayscale-[0.2] group-hover:scale-110 transition-transform duration-700" data-alt="Elegant latte art in a charcoal ceramic cup with dramatic shadows and warm light glinting off the smooth milk surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu7Q98GpF3tTPnUk3Q02amT6YqrZ_m9pThEqmLngj2rIK8WlVPS0n1exWG2fBJilmfH9QFPKLtB9hz3V7hcmsxbIlpLdLi1VpzSFuq9uyPJ5Vj79GIIH4V6lxe3UYuDZg7lh022QKFhrNE1Gy1rCJCqEIGzw_H345_5Of2OULf4_m-T5b71Jet_rSKVb67fPffO7ErRBmUcLO2IhaY2ECpQSaSLPALph9VsEDJlOK3BuK8O6HKiH7cyIubmyaN9eMq1PGa7RRe"/>
+</div>
+<div class="p-8 flex flex-col flex-1">
+<div class="flex justify-between items-start mb-4">
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-primary">Craft Milk</span>
+<span class="font-mono text-[10px] uppercase tracking-[0.2em] text-stone-500">ID: #LAT-045</span>
+</div>
+<h3 class="font-serif text-3xl font-light text-on-background mb-3 group-hover:text-primary transition-colors">The Architect</h3>
+<p class="font-sans text-sm text-stone-400 mb-6 line-clamp-2 leading-relaxed">Our signature 6oz flat white using a custom-blended milk and a chocolate-forward Brazilian roast base.</p>
+<div class="mt-auto flex flex-wrap gap-2">
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Dark Cocoa</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Hazelnut</span>
+<span class="px-2 py-1 text-[9px] font-mono border border-outline-variant/30 text-stone-500 uppercase">Creamy</span>
+</div>
+</div>
+</article>
+</div>
+</main>
+</div>
+<!-- Footer -->
+<footer class="w-full border-t border-[#534439]/20 bg-[#0F0B08] flex flex-col md:flex-row justify-between items-center py-12 px-12 mt-auto">
+<div class="font-serif italic text-xl text-stone-300 mb-6 md:mb-0">
+            The Scholarly Roaster
+        </div>
+<div class="flex flex-wrap justify-center gap-8 mb-6 md:mb-0 font-mono text-xs uppercase tracking-widest">
+<a class="text-stone-500 hover:text-stone-200 transition-colors" href="#">The Archives</a>
+<a class="text-stone-500 hover:text-stone-200 transition-colors" href="#">Editorial Policy</a>
+<a class="text-stone-500 hover:text-stone-200 transition-colors" href="#">Curation Standards</a>
+<a class="text-stone-500 hover:text-stone-200 transition-colors" href="#">Privacy</a>
+<a class="text-stone-500 hover:text-stone-200 transition-colors" href="#">Terms of Service</a>
+</div>
+<div class="font-mono text-[10px] uppercase tracking-widest text-stone-600 opacity-80">
+            © 2024 The Scholarly Roaster. An Archive of Specialty Excellence.
+        </div>
+</footer>
+</body></html>
