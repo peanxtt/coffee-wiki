@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@config '../../tailwind.config.js';
 
 @layer base {
   :root {
@@ -19,37 +18,5 @@
   h5,
   h6 {
     @apply font-serif;
-  }
-}
-
-/* Material Symbols Icons */
-.material-symbols-outlined {
-  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-}
-
-.material-symbols-outlined.filled {
-  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-/* Custom animations from design */
-@keyframes pulse-ring {
-  0% {
-    transform: scale(0.33);
-  }
-  80%,
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes pulse-dot {
-  0% {
-    transform: scale(0.8);
-  }
-  50% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(0.8);
   }
 }

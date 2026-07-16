@@ -1,11 +1,10 @@
-import type { Config } from 'tailwindcss'
+const forms = require('@tailwindcss/forms')
+const typography = require('@tailwindcss/typography')
 
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   darkMode: 'class',
-  content: [
-    './src/**/*.{js,ts,jsx,tsx,mdx}',
-    '../../packages/ui/src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}', '../../packages/ui/src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -47,10 +46,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [forms, typography],
 }
 
-export default config
+module.exports = config
